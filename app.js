@@ -4,16 +4,15 @@ const DOMSelectors = {
     h2s: document.querySelectorAll("h2"),
     button: document.getElementById("button"),
 };
+function makeAlbum(){
+}
+function addCard(Album){
+}
 DOMSelectors.form.addEventListener("submit", function(event){
     event.preventDefault();
-    console.log(DOMSelectors.firstName.value);
-    DOMSelectors.h2s.forEach(
-        (element)=> element.textContent = DOMSelectors.firstName.value);
-});
-function clear(){
-
-}
-DOMSelectors.button.removeEventListener("click", function()){
-    event.preventDefault
-
-}
+    document.querySelector(".gallery").insertAdjacentHTML()
+        //const Album = makeAlbum()
+        //addCard()
+        //clearFields()
+        //addRemoveButtons
+    });

@@ -5,6 +5,7 @@ const DOMSelectors = {
     button: document.getElementById("button"),
 };
 function makeAlbum(){
+    
 }
 function addCard(Album){
 }
@@ -16,3 +17,4 @@ DOMSelectors.form.addEventListener("submit", function(event){
         //clearFields()
         //addRemoveButtons
     });
+DOMSelectors

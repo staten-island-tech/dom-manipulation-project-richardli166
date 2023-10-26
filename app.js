@@ -3,13 +3,13 @@ const DOMSelectors = {
     openerName: document.querySelector(".opener-name"),
     discoveredBy: document.querySelector(".discoverer"),
     bag: document.querySelector(".bag"),
-    Card: document.querySelector("#card"),
+    Card: document.querySelector("#carddisplay"),
 }
 
 function input(){
     DOMSelectors.Card.insertAdjacentHTML("afterend",
-    `<div class="inserts">
-        <img src=${DOMSelectors.firstbag.value} alt="Image" class="opener-image">
+    `<div id="inserts">
+        <img src=${DOMSelectors.bag.value} alt="Image" class="opener-image">
         <h1 class="namecard">${DOMSelectors.openerName.value}</h1>
         <h2>${DOMSelectors.discoveredBy.value}</h2>
         <button>Clear</button>

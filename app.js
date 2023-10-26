@@ -1,25 +1,38 @@
 const DOMSelectors = {
     form: document.querySelector("#form"),
-    firstName: document.querySelector(".first-name"),
-    h2s: document.querySelectorAll("h2"),
-    button: document.getElementById("button"),
-    
-};
-function makeAlbum(){
-    
+    openerName: document.querySelector(".opener-name"),
+    discoveredBy: document.querySelector(".discoverer"),
+    bag: document.querySelector(".bag"),
+    Card: document.querySelector("#card"),
 }
-function addCard(Album){
-}
-function remove(){
 
+function input(){
+    DOMSelectors.Card.insertAdjacentHTML("afterend",
+    `<div class="inserts">
+        <img src=${DOMSelectors.firstbag.value} alt="Image" class="opener-image">
+        <h1 class="namecard">${DOMSelectors.openerName.value}</h1>
+        <h2>${DOMSelectors.discoveredBy.value}</h2>
+        <button>Clear</button>
+    </div>`
+);
 }
-DOMSelectors.form.addEventListener("submit", function(event){
-    addCard;
-    makeAlbum;
+
+function clearfield(){
+    DOMSelectors.openerName.value = "";
+    DOMSelectors.discoveredBy.value = "";
+    DOMSelectors.bag.value = "";
+}
+
+// function clearcard(){
+
+// }
+
+
+
+
+DOMSelectors.form.addEventListener("submit", function (event){
     event.preventDefault();
-    document.querySelector(".gallery").insertAdjacentHTML()
-        //const Album = makeAlbum()
-        //addCard()
-        //clearFields()
-        //addRemoveButtons
+    input();
+    clearfield();
+    // clearcard();
     });

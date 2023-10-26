@@ -4,21 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div>
+
+    <h1 id ="title">Tetris Opener Card Creation</h1>
+
+    <div class="inputField">
+
         <form action="" id="form">
-            <label for="firstName">Enter Opener Name</label>
-            <input type="text" name="firstName" class="first-name">
+            <label for="Openername">Opener Name</label><br>
+            <input type="text" name="openerName" class="opener-name"><br>
+
+            <label for="Discoveredby">Discovered</label><br>
+            <input type="text" name="discoveredBy" class="discoverer"><br>
+
+            <label for="Bag">Setup For The First Bag</label><br>
+            <input type="text" name="firstbag" class="bag"><br>
+
             <input type="submit" value="Click to submit" id="submit">
+
         </form>
-        <button class="button" type="button">Remove</button>
-        <div class="gallery">
-            <div class="card"></div>
-        </div class="card-title">
-        <script src="app.js"></script>
+
+    </div>
+
+    <div id="carddisplay">
+    </div>
+
+    <script src="app.js"></script>
+
 </body>
 
 </html>

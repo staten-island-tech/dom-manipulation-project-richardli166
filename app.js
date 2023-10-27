@@ -7,8 +7,8 @@ const DOMSelectors = {
 }
 
 function input(){
-    DOMSelectors.Card.insertAdjacentHTML("afterend",
-    `<div id="inserts">
+    DOMSelectors.Card.insertAdjacentHTML("beforeend",
+    `<div class="inserts">
         <img src=${DOMSelectors.bag.value} alt="Image" class="opener-image">
         <h1 class="namecard">${DOMSelectors.openerName.value}</h1>
         <h2>${DOMSelectors.discoveredBy.value}</h2>
@@ -23,9 +23,14 @@ function clearfield(){
     DOMSelectors.bag.value = "";
 }
 
-// function clearcard(){
-
-// }
+function clearcard(){
+    const clear = document.querySelectorAll(".inserts");
+    clear.forEach(card => {card.addEventListener("click", function (event)){
+    event
+    }
+    });
+    clear.remove();
+}
 
 
 
@@ -34,5 +39,5 @@ DOMSelectors.form.addEventListener("submit", function (event){
     event.preventDefault();
     input();
     clearfield();
-    // clearcard();
+    clearcard();
     });

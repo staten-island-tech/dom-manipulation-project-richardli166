@@ -12,7 +12,7 @@ function input(){
         <img src=${DOMSelectors.bag.value} alt="Image" class="opener-image">
         <h1 class="namecard">${DOMSelectors.openerName.value}</h1>
         <h2>${DOMSelectors.discoveredBy.value}</h2>
-        <button>Clear</button>
+        <button class="kenismean">Clear</button>
     </div>`
 );
 }
@@ -24,16 +24,13 @@ function clearfield(){
 }
 
 function clearcard(){
-    const clear = document.querySelectorAll(".inserts");
-    clear.forEach(card => {card.addEventListener("click", function (event)){
-    event
+    const clear = document.querySelectorAll(".kenismean");
+    clear.forEach(card => {card.addEventListener("click", function (nowant){
+    nowant.target.parentElement.remove();
     }
-    });
+    )});
     clear.remove();
 }
-
-
-
 
 DOMSelectors.form.addEventListener("submit", function (event){
     event.preventDefault();

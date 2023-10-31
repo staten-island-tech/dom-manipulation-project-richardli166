@@ -29,15 +29,22 @@ body {
     padding: 30px;
     display: flex;
 }
- 
+
 .opener-image {
     width: 90%;
     height: 65%;
     margin: auto;
 }
-#submit{
+
+#submit {
     margin-top: 5px;
+    background-color: rgb(25, 103, 210);
 }
+
+.kenismean {
+    background-color: red;
+}
+
 #carddisplay {
     display: flex;
     flex-direction: row;
@@ -53,19 +60,21 @@ div {
 }
 
 @media screen and (max-width: 1200px) {
-    .card {
+    .inserts {
         width: 40%;
     }
+
     #title {
         font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .card {
+    .inserts {
         width: 100%;
     }
-    #title{
+
+    #title {
         font-size: 1rem;
     }
 }

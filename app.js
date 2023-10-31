@@ -12,7 +12,7 @@ function input(){
         <img src=${DOMSelectors.bag.value} alt="Image" class="opener-image">
         <h1 class="namecard">${DOMSelectors.openerName.value}</h1>
         <h2>${DOMSelectors.discoveredBy.value}</h2>
-        <button class="kenismean">Clear</button>
+        <button class="kenismean">CLEAR</button>
     </div>`
 );
 }
